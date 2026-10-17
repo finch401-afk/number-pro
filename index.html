@@ -1,39 +1,573 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Pro — Memorable Custom Phone Numbers</title>
-  <meta name="description" content="Premium custom phone numbers built for your brand.">
-  <style>
-    :root{--navy:#031b38;--deep:#00142c;--blue:#073866;--gold:#edae21;--gold2:#ffc94d;--ink:#0c1c3b;--muted:#5b6474;--shadow:0 16px 45px rgba(5,28,56,.14)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}a{text-decoration:none;color:inherit}.section{padding:72px 0}.gold{color:var(--gold)}
-    .hero{min-height:690px;color:#fff;background:radial-gradient(circle at 82% 48%,#13558f 0,#052d56 28%,#031b38 60%,#00142c);overflow:hidden}.nav{height:82px;display:flex;align-items:center;gap:28px;position:relative;z-index:4}.logo{font-size:24px;font-weight:900;display:flex;flex-wrap:wrap;width:190px;line-height:.8}.logo strong{background:var(--gold);padding:6px;margin:-7px 0 0 5px;border-radius:3px}.logo small{font-size:7px;width:100%;margin-top:8px;font-weight:400}.links{display:flex;gap:26px;margin-left:auto}.links a{font-size:11px;font-weight:800;text-transform:uppercase}.links a:hover{color:var(--gold)}.menu{display:none;background:none;border:0;color:white;font-size:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:16px 22px;border-radius:6px;background:linear-gradient(135deg,var(--gold2),#d9970d);color:#061830;font-weight:900;font-size:11px;text-transform:uppercase;box-shadow:0 9px 22px rgba(237,174,33,.18);transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.outline{background:transparent;border:1px solid var(--gold);color:#fff;box-shadow:none}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;min-height:600px}.eyebrow{color:var(--gold2);font-weight:900;font-size:11px;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:57px;line-height:.98;text-transform:uppercase;margin:18px 0 15px;letter-spacing:-2px}.hero h2{text-transform:uppercase;font-size:17px}.hero .lead{font-size:16px;line-height:1.6;max-width:500px;margin:24px 0}.actions{display:flex;gap:16px}.mini{display:flex;gap:22px;flex-wrap:wrap;margin-top:31px;color:#d9e5f0;font-size:11px}.visual{height:515px;position:relative}.phone{position:absolute;width:240px;height:480px;right:15px;top:15px;border-radius:42px;background:linear-gradient(135deg,#111923,#02070d 70%);border:7px solid #aab1b6;box-shadow:-28px 38px 60px rgba(0,0,0,.43);transform:rotate(6deg);padding:60px 24px 20px;text-align:center}.phone:before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:82px;height:17px;background:#05090e;border-radius:0 0 12px 12px}.phone p,.phone h3,.phone h4{margin:6px}.phone h3{color:var(--gold);font-size:11px}.phone h4{font-size:18px;margin:16px 0}.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.keys i{font-style:normal;background:#102238;width:39px;height:39px;border-radius:50%;display:grid;place-items:center;margin:auto}.call{width:40px;height:40px;border-radius:50%;background:#38bd59;display:grid;place-items:center;margin:16px auto}.bigNum{position:absolute;z-index:2;top:170px;left:0;text-align:center;color:var(--gold2);font-size:48px;font-weight:900;line-height:.7;text-shadow:5px 6px 0 #986303,0 0 20px #ffd15d;transform:rotate(-3deg)}.bigNum b{display:block;font-size:91px}.bigNum strong{display:block;font-size:81px}
-    .benefitBar{margin-top:-25px;position:relative;z-index:3}.benefits{display:grid;grid-template-columns:1.45fr repeat(5,1fr);background:#fff;border-radius:14px;box-shadow:var(--shadow);overflow:hidden}.asset,.benefit{padding:28px 15px;border-right:1px solid #e3e6ea}.asset{background:linear-gradient(145deg,#082e59,#00162f);color:white}.asset p{font-weight:800;text-transform:uppercase}.asset h3{font-size:26px;color:var(--gold);text-transform:uppercase}.benefit{text-align:center}.benefit b{font-size:30px}.benefit h3{font-size:11px;text-transform:uppercase}.benefit p{font-size:9px;line-height:1.5}.title{text-align:center;margin-bottom:38px}.title p{color:#9b6a08;letter-spacing:2px;font-size:10px;font-weight:900;text-transform:uppercase}.title h2{font-size:28px;text-transform:uppercase;margin:8px}.why{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.checks div{display:flex;gap:13px;margin:15px}.checks i{font-style:normal;background:var(--gold);color:#fff;width:22px;height:22px;border-radius:50%;display:grid;place-items:center}.checks b{display:block;text-transform:uppercase;font-size:12px}.checks small{color:var(--muted)}.result{background:radial-gradient(circle at top right,#0c4e80,#031b38 65%);color:#fff;text-align:center;border-radius:12px;padding:30px;box-shadow:var(--shadow)}.result h3{font-size:24px;text-transform:uppercase;margin:5px}.result .flow{display:flex;justify-content:space-around;align-items:center;margin:27px 0}.flow span{font-size:27px}.flow small{display:block;font-size:8px;text-transform:uppercase;margin-top:8px}.flow b{color:var(--gold);font-size:28px}
-    .numbers{background:#f4f6f8}.numGrid{display:grid;grid-template-columns:280px 1fr;gap:34px}.numIntro h2{text-transform:uppercase;font-size:28px}.numIntro p{color:var(--muted);font-size:14px;line-height:1.55}.search{display:flex;gap:8px;background:white;border:1px solid #dce1e6;padding:12px;border-radius:7px}.search input{border:0;outline:0;width:100%;font-size:14px}.table{background:#fff;border-radius:10px;box-shadow:var(--shadow);overflow:hidden}.row{display:grid;grid-template-columns:1.35fr 1fr .8fr .65fr;padding:12px 18px;border-bottom:1px solid #e7e9ed;font-size:12px;align-items:center}.row.head{background:var(--navy);color:#fff;font-size:9px;text-transform:uppercase}.row strong{font-size:15px}.available{color:#28963e;font-weight:900;text-transform:uppercase}.sold{color:#d33;font-weight:900;text-transform:uppercase}.premium{color:#9b6a08}.empty{text-align:center;color:var(--muted);padding:35px;display:none}
-    .stories{background:radial-gradient(circle at center,#08426e,var(--deep));color:#fff}.stories .title p{color:var(--gold2)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid rgba(255,255,255,.2);padding:27px;border-radius:10px;background:rgba(255,255,255,.03)}.card .quote{font-size:33px;color:var(--gold)}.card p{font-size:13px;line-height:1.6;min-height:84px}.stars{color:var(--gold);letter-spacing:3px}.card h3{font-size:13px;margin-bottom:3px}.card small{color:#bac9d7}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.step{text-align:center;position:relative}.step .n{position:absolute;left:25%;top:0;background:var(--gold);width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900}.step .icon{font-size:42px;height:66px}.step h3{font-size:11px;text-transform:uppercase}.step p{font-size:10px;color:var(--muted);line-height:1.5}.contact{margin-bottom:0;background:linear-gradient(110deg,#06294e,#00142c);color:#fff;border-radius:10px;padding:25px 35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h3{text-transform:uppercase;margin:0}.contact h3 span{display:block;color:var(--gold)}.contact p{font-size:11px}.details{display:flex;flex-direction:column;gap:8px;font-size:13px}footer{background:var(--deep);color:#fff;margin-top:22px;padding:30px 0 16px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.foot div{display:flex;flex-direction:column;gap:7px;font-size:10px}.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:23px;padding-top:15px;font-size:9px;color:#a8b3c1}
-    @media(max-width:900px){.menu{display:block;margin-left:auto}.links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--deep);padding:20px;flex-direction:column}.links.open{display:flex}.nav>.btn{display:none}.heroGrid{grid-template-columns:1fr;padding:55px 0}.hero h1{font-size:44px}.visual{height:440px}.phone{right:10%;height:430px}.bigNum{left:12%;top:145px}.benefits{grid-template-columns:repeat(2,1fr)}.asset{grid-column:span 2}.why,.numGrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.wrap{width:calc(100% - 28px)}.section{padding:52px 0}.hero h1{font-size:37px}.actions{flex-direction:column}.visual{height:390px}.phone{width:195px;height:380px;right:0;padding:50px 16px}.keys{gap:5px}.keys i{width:33px;height:33px}.bigNum{left:0;top:135px}.bigNum b{font-size:65px}.bigNum strong{font-size:58px}.benefits{grid-template-columns:1fr}.asset{grid-column:span 1}.why{gap:28px}.flow span{font-size:20px}.row.head{display:none}.row{grid-template-columns:1fr 1fr}.row span{margin-top:7px}.steps{grid-template-columns:1fr}.contact{display:block}.details{margin:20px 0}.foot{grid-template-columns:1fr 1fr}.foot .logo{grid-column:span 2}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Number Pro | Memorable Phone Numbers | 加拿大好记电话号码</title>
+<meta name="description" content="Buy a memorable phone number for your business in Canada. One-time purchase, transferred to your carrier in your name. Yours for good.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+Gurmukhi:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F5F7FA;
+  --surface: #FFFFFF;
+  --ink: #14213D;
+  --muted: #5A6478;
+  --line: #DCE1EA;
+  --accent: #2E5BFF;
+  --accent-ink: #FFFFFF;
+  --mark: #FFD24A;
+  --mark-ink: #14213D;
+  --sold: #A3ABBA;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1729; --surface: #172238; --ink: #EEF2F8; --muted: #9AA6BC;
+    --line: #2A3753; --accent: #6E8CFF; --accent-ink: #0F1729;
+    --mark: #FFD24A; --mark-ink: #14213D; --sold: #5E6A82;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1729; --surface: #172238; --ink: #EEF2F8; --muted: #9AA6BC;
+  --line: #2A3753; --accent: #6E8CFF; --accent-ink: #0F1729;
+  --mark: #FFD24A; --mark-ink: #14213D; --sold: #5E6A82;
+  color-scheme: dark;
+}
+:root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+html { scroll-behavior: smooth; scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px)); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Archivo", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Noto Sans Gurmukhi", "Raavi", sans-serif;
+  font-size: 1.0625rem; line-height: 1.55;
+  font-variant-numeric: tabular-nums;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Header */
+header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { font-weight: 800; font-stretch: 112%; font-size: 1.25rem; text-decoration: none; letter-spacing: -0.01em; }
+.logo span { color: var(--accent); }
+.nav ul { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
+.nav ul a { text-decoration: none; color: var(--muted); font-weight: 500; }
+.nav ul a:hover { color: var(--ink); }
+.btn {
+  display: inline-block; background: var(--accent); color: var(--accent-ink);
+  font: inherit; font-weight: 700; text-decoration: none; border: 0; cursor: pointer;
+  padding: 0.75rem 1.25rem; border-radius: 8px;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--line); }
+
+.lang { font-weight: 600; text-decoration: none; color: var(--muted); margin-right: 1rem; }
+.lang:hover { color: var(--ink); }
+.nav-right { display: flex; align-items: center; }
+
+html:not([data-l="en"]) span[lang="en"], html:not([data-l="zh"]) span[lang="zh-CN"], html:not([data-l="pa"]) span[lang="pa"] { display: none !important; }
+html[data-l="pa"] h1, html[data-l="pa"] h2 { letter-spacing: 0; line-height: 1.3; }
+.langs { display: flex; gap: 0.15rem; margin-right: 0.75rem; }
+.langs button { background: none; border: 0; font: inherit; font-weight: 600; font-size: 0.95rem; color: var(--muted); cursor: pointer; padding: 0.35rem 0.5rem; border-radius: 6px; }
+.langs button[aria-pressed="true"] { color: var(--ink); background: var(--line); }
+@media (max-width: 760px) { .nav-right > .btn { display: none; } }
+html[data-l="zh"] h1, html[data-l="zh"] h2 { letter-spacing: 0; line-height: 1.25; }
+button.lang { background: none; border: 0; font: inherit; cursor: pointer; padding: 0.4rem 0.2rem; }
+
+/* Hero */
+.hero { padding: 4.5rem 0 3.5rem; }
+.hero h1 {
+  font-size: clamp(2.25rem, 5.5vw, 4rem); line-height: 1.05; font-weight: 800;
+  font-stretch: 108%; letter-spacing: -0.02em; margin: 0 0 1rem; max-width: 16ch;
+}
+.hero p.lede { font-size: 1.25rem; color: var(--muted); max-width: 44ch; margin: 0 0 2rem; }
+.dial {
+  font-weight: 800; font-stretch: 62%; line-height: 0.9; letter-spacing: -0.02em;
+  font-size: clamp(3rem, 11vw, 8.5rem); margin: 0 0 1.5rem; white-space: nowrap;
+}
+.tails { display: grid; grid-template-columns: repeat(9, 1fr); gap: 0.5rem; max-width: 900px; margin: 0 0 2.5rem; }
+.tails button {
+  font: inherit; font-weight: 800; font-stretch: 70%; font-size: 1.35rem; cursor: pointer;
+  padding: 0.7rem 0; border-radius: 8px; border: 2px solid var(--line);
+  background: var(--surface); color: var(--ink);
+}
+.tails button:hover, .tails button.on { background: var(--mark); border-color: var(--mark); color: var(--mark-ink); }
+@media (max-width: 760px) { .tails { grid-template-columns: repeat(3, 1fr); } }
+.dial .area { color: var(--muted); font-weight: 600; }
+.dial mark { background: var(--mark); color: var(--mark-ink); padding: 0 0.06em; border-radius: 0.06em; }
+.search {
+  display: flex; gap: 0.5rem; flex-wrap: wrap; max-width: 560px;
+}
+.search input {
+  flex: 1 1 240px; font: inherit; padding: 0.8rem 1rem; border-radius: 8px;
+  border: 2px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.search input:focus { border-color: var(--accent); outline: none; }
+.promise { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 1.5rem 0 0; padding: 0; list-style: none; color: var(--muted); font-weight: 500; }
+.promise li::before { content: "✓ "; color: var(--accent); font-weight: 800; }
+
+/* Sections */
+section { padding: 4rem 0; }
+section + section { border-top: 1px solid var(--line); }
+h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 800; font-stretch: 105%; letter-spacing: -0.015em; line-height: 1.1; margin: 0 0 0.5rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; max-width: 56ch; }
+
+/* Numbers */
+.filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.chip {
+  font: inherit; font-weight: 600; font-size: 0.95rem; cursor: pointer;
+  padding: 0.45rem 0.9rem; border-radius: 999px; border: 2px solid var(--line);
+  background: transparent; color: var(--ink);
+}
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.num {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;
+}
+.num .digits { font-size: 2rem; font-weight: 800; font-stretch: 75%; letter-spacing: -0.01em; line-height: 1; white-space: nowrap; }
+.num .digits mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padding: 0 2px; }
+.num .meta { color: var(--muted); font-size: 0.95rem; }
+.num .row { display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem; margin-top: auto; }
+.num .btn { padding: 0.55rem 1rem; font-size: 0.95rem; }
+.num.sold { opacity: 0.6; }
+.num.sold .digits mark { background: transparent; color: var(--sold); }
+.sold-tag { font-weight: 700; color: var(--sold); }
+.empty { color: var(--muted); padding: 2rem 0; }
+.note { color: var(--muted); font-size: 0.95rem; margin-top: 1.25rem; }
+
+/* Custom */
+.custom { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
+.custom-box { background: var(--surface); border: 2px solid var(--ink); border-radius: 12px; padding: 1.75rem; }
+.custom-price { font-size: 2.5rem; font-weight: 800; font-stretch: 75%; line-height: 1; margin: 0 0 0.75rem; }
+.custom-note { color: var(--muted); margin: 0 0 1.25rem; }
+@media (max-width: 760px) { .custom { grid-template-columns: 1fr; gap: 1.5rem; } }
+
+/* About */
+.about { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: start; }
+.about-text { max-width: 60ch; margin: 0; }
+.addr { font-style: normal; color: var(--muted); margin-top: 1.25rem; line-height: 1.5; }
+.addr a { color: var(--muted); }
+@media (max-width: 760px) { .about { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* Process */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; counter-reset: s; }
+.steps li { counter-increment: s; border-top: 3px solid var(--ink); padding-top: 1rem; }
+.steps li::before { content: counter(s); display: block; font-size: 2.5rem; font-weight: 800; font-stretch: 62%; line-height: 1; margin-bottom: 0.5rem; color: var(--accent); }
+.steps h3 { margin: 0 0 0.35rem; font-size: 1.2rem; }
+.steps p { margin: 0; color: var(--muted); }
+
+/* Why own */
+.own { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.compare { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+.compare th, .compare td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); }
+.compare thead th { font-size: 0.95rem; color: var(--muted); font-weight: 600; }
+.compare td:nth-child(2) { font-weight: 700; }
+.compare tr:last-child td { border-bottom: 0; }
+.reasons { margin: 0; padding: 0; list-style: none; display: grid; gap: 1.25rem; }
+.reasons strong { display: block; font-size: 1.1rem; }
+.reasons span { color: var(--muted); }
+
+/* FAQ */
+.faq { max-width: 760px; }
+details { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; padding: 1.1rem 0; font-weight: 700; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-weight: 400; font-size: 1.5rem; line-height: 1; color: var(--muted); }
+details[open] summary::after { content: "–"; }
+details p { margin: 0 0 1.1rem; color: var(--muted); max-width: 64ch; }
+
+/* Stories */
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+blockquote { margin: 0; }
+blockquote p { font-size: 1.2rem; margin: 0 0 0.75rem; }
+blockquote footer { color: var(--muted); }
+blockquote footer strong { color: var(--ink); }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; }
+.direct a { display: block; font-size: 1.5rem; font-weight: 800; font-stretch: 80%; text-decoration: none; margin-bottom: 0.5rem; }
+.direct a:hover { color: var(--accent); }
+form { display: grid; gap: 1rem; }
+label { font-weight: 600; font-size: 0.95rem; display: grid; gap: 0.35rem; }
+form input, form textarea {
+  font: inherit; font-weight: 400; padding: 0.75rem 0.9rem; border-radius: 8px;
+  border: 2px solid var(--line); background: var(--surface); color: var(--ink); width: 100%;
+}
+form input:focus, form textarea:focus { border-color: var(--accent); outline: none; }
+form textarea { min-height: 100px; resize: vertical; }
+
+.reach { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.direct .reach a { display: inline-block; font-size: 1rem; font-weight: 700; font-stretch: 100%; margin: 0; }
+.direct .reach a.btn { color: var(--accent-ink); }
+.direct .reach a.btn.ghost { color: var(--ink); }
+
+/* Footer */
+.site-foot { border-top: 1px solid var(--line); padding: 2rem 0 6rem; color: var(--muted); font-size: 0.95rem; }
+.site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+.site-foot a { color: var(--muted); }
+
+/* Mobile bar */
+.mbar { display: none; }
+@media (max-width: 760px) {
+  .nav ul { display: none; }
+  .own, .contact { grid-template-columns: 1fr; gap: 2rem; }
+  .hero { padding: 2.5rem 0 2.5rem; }
+  section { padding: 3rem 0; }
+  .mbar {
+    display: flex; gap: 0.5rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    background: var(--surface); border-top: 1px solid var(--line);
+  }
+  .mbar .btn { flex: 1; text-align: center; }
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Number Pro","url":"https://numberpro.ca",
+"description":"Memorable phone numbers for Canadian businesses. One-time purchase, transferred to your carrier in your name. Custom numbers on request.",
+"telephone":"+1-825-925-1111","email":"info@numberpro.ca",
+"address":{"@type":"PostalAddress","streetAddress":"6115 3 St SE, Building D","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},
+"areaServed":"CA"}
+</script>
 </head>
 <body>
-  <header class="hero" id="home">
-    <nav class="nav wrap"><a class="logo" href="#home">NUMBER <strong>PRO</strong><small>Your business. Your number. Your success.</small></a><button class="menu" id="menu" aria-label="Toggle navigation">☰</button><div class="links" id="links"><a href="#home">Home</a><a href="#about">Why us</a><a href="#numbers">Numbers</a><a href="#stories">Stories</a><a href="#process">Process</a><a href="#contact">Contact</a></div><a class="btn" href="#numbers">Get started</a></nav>
-    <div class="heroGrid wrap"><div><p class="eyebrow">Canada's memorable number specialists</p><h1>Make your business <span class="gold">easy to remember.</span></h1><h2>Custom phone numbers built for your brand</h2><p class="lead">Stand out. Be remembered. Get a phone number your customers will never forget.</p><div class="actions"><a class="btn" href="#numbers">View available numbers →</a><a class="btn outline" href="#process">How it works →</a></div><div class="mini"><span>☆ Easy to remember</span><span>♢ Build credibility</span><span>↗ Boost marketing</span></div></div><div class="visual"><div class="bigNum"><span>1 800</span><b>555</b><strong>1111</strong></div><div class="phone"><p>Your business</p><h3>CUSTOM NUMBER</h3><h4>1-800-555-1111</h4><div class="keys"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>*</i><i>0</i><i>#</i></div><div class="call">☎</div></div></div></div>
-  </header>
-  <section class="benefitBar" id="about"><div class="benefits wrap"><div class="asset"><p>A great number isn't just a number.</p><h3>It's an asset.</h3></div><div class="benefit"><b>✦</b><h3>Instant recognition</h3><p>Customers remember your number the first time.</p></div><div class="benefit"><b>☎</b><h3>More calls</h3><p>Easy numbers get dialed more often.</p></div><div class="benefit"><b>◆</b><h3>More business</h3><p>More calls become more leads.</p></div><div class="benefit"><b>✹</b><h3>Stronger brand</h3><p>A professional number builds confidence.</p></div><div class="benefit"><b>↗</b><h3>Long-term value</h3><p>A great number grows in value.</p></div></div></section>
-  <section class="section wrap"><div class="title"><p>More than a phone number</p><h2>Why smart businesses choose custom numbers</h2></div><div class="why"><div class="checks"><div><i>✓</i><p><b>Build trust &amp; credibility</b><small>A memorable number shows you're established.</small></p></div><div><i>✓</i><p><b>Dominate your market</b><small>Stand out with a number that gets noticed.</small></p></div><div><i>✓</i><p><b>Maximize marketing impact</b><small>Perfect for ads, cards, trucks and websites.</small></p></div><div><i>✓</i><p><b>Improve customer experience</b><small>Easy to remember, share and call.</small></p></div><div><i>✓</i><p><b>Fuel business growth</b><small>More visibility. More customers. More revenue.</small></p></div></div><aside class="result"><h3>The right number</h3><h3 class="gold">can change everything.</h3><div class="flow"><span>◉<small>Visibility</small></span><b>›</b><span>☎<small>Calls</small></span><b>›</b><span>♟<small>Customers</small></span><b>›</b><span>↗<small>Sales</small></span></div><h3 class="gold">More success.</h3></aside></div></section>
-  <section class="numbers section" id="numbers"><div class="numGrid wrap"><div class="numIntro"><p class="eyebrow" style="color:#9b6a08">Find your perfect number</p><h2>Premium numbers <span class="gold">available now.</span></h2><p>Short. Memorable. Powerful. Search by area code or number pattern.</p><label class="search">⌕ <input id="search" placeholder="Try 825 or 3333" aria-label="Search phone numbers"></label><p id="count" style="font-size:10px">7 matching numbers</p></div><div class="table" id="table"><div class="row head"><span>Number</span><span>Area code</span><span>Type</span><span>Status</span></div><div class="row data"><strong>☎ 825-XXX-1111</strong><span>825 · Alberta</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="row data"><strong>☎ 825-XXX-2222</strong><span>825 · Alberta</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="row data"><strong>☎ 825-XXX-3333</strong><span>825 · Alberta</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="row data"><strong>☎ 587-XXX-4444</strong><span>587 · Alberta</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="row data"><strong>☎ 825-XXX-5555</strong><span>825 · Alberta</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="row data"><strong>☎ 647-XXX-8888</strong><span>647 · Ontario</span><span class="premium">♛ Premium</span><span class="sold">Sold</span></div><div class="row data"><strong>☎ 437-XXX-3333</strong><span>437 · Ontario</span><span class="premium">♛ Premium</span><span class="available">Available</span></div><div class="empty" id="empty">No numbers match your search.</div></div></div></section>
-  <section class="stories section" id="stories"><div class="wrap"><div class="title"><p>Customer stories</p><h2>Real businesses. <span class="gold">Real results.</span></h2></div><div class="cards"><article class="card"><b class="quote">“</b><p>Our 416-751-5555 number is everywhere. Customers remember it instantly.</p><div class="stars">★★★★★</div><h3>Beck Taxi</h3><small>Toronto, ON</small></article><article class="card"><b class="quote">“</b><p>The right number makes our business look bigger, stronger and more professional.</p><div class="stars">★★★★★</div><h3>Calgary United Cabs</h3><small>Calgary, AB</small></article><article class="card"><b class="quote">“</b><p>We saw an immediate increase in calls after switching to a memorable number.</p><div class="stars">★★★★★</div><h3>Vancouver Taxi</h3><small>Vancouver, BC</small></article></div></div></section>
-  <section class="section wrap" id="process"><div class="title"><p>Simple from start to finish</p><h2>Get your custom number in <span class="gold">4 easy steps</span></h2></div><div class="steps"><article class="step"><span class="n">1</span><div class="icon">⌕</div><h3>Choose your number</h3><p>Browse our premium available numbers.</p></article><article class="step"><span class="n">2</span><div class="icon">▤</div><h3>Confirm &amp; reserve</h3><p>We'll confirm availability and reserve it.</p></article><article class="step"><span class="n">3</span><div class="icon">⚙</div><h3>Setup made easy</h3><p>We handle setup quickly and professionally.</p></article><article class="step"><span class="n">4</span><div class="icon">➤</div><h3>Start getting noticed</h3><p>Launch with a number people remember.</p></article></div></section>
-  <section class="contact wrap" id="contact"><div><h3>Let's get you a <span>number that works!</span></h3><p>Talk to a number specialist today.</p></div><div class="details"><a href="tel:+18259251111">☎ 825-925-1111</a><a href="mailto:info@numberpro.ca">✉ info@numberpro.ca</a><span>◎ www.numberpro.ca</span></div><a class="btn" href="mailto:info@numberpro.ca">Contact us →</a></section>
-  <footer><div class="foot wrap"><a class="logo" href="#home">NUMBER <strong>PRO</strong><small>Your business. Your number. Your success.</small></a><div><b>Quick links</b><a href="#about">Why us</a><a href="#numbers">Available numbers</a><a href="#stories">Success stories</a></div><div><b>Company</b><a href="#process">Our process</a><a href="#contact">Contact</a><span>Privacy policy</span></div></div><div class="copy wrap">© 2026 Number Pro. All rights reserved.</div></footer>
-  <script>
-    const menu=document.getElementById('menu'),links=document.getElementById('links');
-    menu.addEventListener('click',()=>links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-    const search=document.getElementById('search'),rows=[...document.querySelectorAll('.row.data')],count=document.getElementById('count'),empty=document.getElementById('empty');
-    search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let visible=0;rows.forEach(row=>{const show=row.textContent.toLowerCase().includes(q);row.style.display=show?'grid':'none';if(show)visible++});count.textContent=visible+' matching number'+(visible===1?'':'s');empty.style.display=visible?'none':'block'});
-  </script>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Number<span>Pro</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#numbers"><span lang="en">Numbers</span><span lang="zh-CN">靓号</span><span lang="pa">ਨੰਬਰ</span></a></li>
+        <li><a href="#custom"><span lang="en">Custom</span><span lang="zh-CN">定制</span><span lang="pa">ਕਸਟਮ</span></a></li>
+        <li><a href="#process"><span lang="en">How it works</span><span lang="zh-CN">购买流程</span><span lang="pa">ਨੰਬਰ ਕਿਵੇਂ ਲਈਏ</span></a></li>
+        <li><a href="#about"><span lang="en">About</span><span lang="zh-CN">关于我们</span><span lang="pa">ਸਾਡੇ ਬਾਰੇ</span></a></li>
+        <li><a href="#faq"><span lang="en">FAQ</span><span lang="zh-CN">常见问题</span><span lang="pa">ਸਵਾਲ-ਜਵਾਬ</span></a></li>
+        <li><a href="#contact"><span lang="en">Contact</span><span lang="zh-CN">联系我们</span><span lang="pa">ਗੱਲ ਕਰੋ</span></a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="langs" role="group" aria-label="Language"><button type="button" data-l="en">EN</button><button type="button" data-l="zh" lang="zh-CN">中文</button><button type="button" data-l="pa" lang="pa">ਪੰਜਾਬੀ</button></div>
+      <a class="btn" href="#numbers"><span lang="en">View numbers</span><span lang="zh-CN">看号</span><span lang="pa">ਨੰਬਰ ਦੇਖੋ</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1><span lang="en">A phone number your customers remember.</span><span lang="zh-CN">好号码，客户看一眼就记住</span><span lang="pa">ਐਸਾ ਨੰਬਰ, ਜੋ ਗਾਹਕ ਇੱਕ ਵਾਰ ਦੇਖ ਕੇ ਹੀ ਯਾਦ ਰੱਖ ਲੈਣ</span></h1>
+      <p class="lede"><span lang="en">Four-of-a-kind endings across Alberta, BC, Quebec and Ontario. Buy once, we transfer it to your carrier in your name, and it’s yours for good.</span><span lang="zh-CN">阿尔伯塔、BC、魁北克、安大略的四连号现货。一次买断，直接过户到您名下，以后就是您自己的号。</span><span lang="pa">ਅਲਬਰਟਾ, ਬੀ.ਸੀ., ਕਿਊਬੈਕ ਤੇ ਓਂਟਾਰੀਓ ਦੇ 5555, 8888, 9999 ਵਰਗੇ ਨੰਬਰ ਤਿਆਰ ਨੇ। ਇੱਕੋ ਵਾਰ ਪੈਸੇ ਦਿਓ, ਨੰਬਰ ਤੁਹਾਡੇ ਨਾਂ ’ਤੇ ਤੁਹਾਡੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਟਰਾਂਸਫਰ, ਤੇ ਫਿਰ ਹਮੇਸ਼ਾ ਲਈ ਤੁਹਾਡਾ।</span></p>
+      <div class="dial" aria-label="XXX-XXX-1111 … 9999"><span class="area">XXX-XXX-</span><mark id="dial-tail">1111</mark></div>
+      <div class="tails" role="group" aria-label="1111–9999">
+        <button type="button" data-tail="1111">1111</button><button type="button" data-tail="2222">2222</button><button type="button" data-tail="3333">3333</button>
+        <button type="button" data-tail="4444">4444</button><button type="button" data-tail="5555">5555</button><button type="button" data-tail="6666">6666</button>
+        <button type="button" data-tail="7777">7777</button><button type="button" data-tail="8888">8888</button><button type="button" data-tail="9999">9999</button>
+      </div>
+      <form class="search" role="search" onsubmit="event.preventDefault(); goSearch();">
+        <label for="hero-q" style="position:absolute;left:-9999px">Search / 搜索</label>
+        <input id="hero-q" type="search" inputmode="numeric" data-ph-en="Area code or digits, e.g. 825 or 5555" data-ph-zh="输区号或尾号，比如 825、5555" data-ph-pa="ਏਰੀਆ ਕੋਡ ਜਾਂ ਆਖ਼ਰੀ ਅੰਕ, ਜਿਵੇਂ 825 ਜਾਂ 5555">
+        <button class="btn" type="submit"><span lang="en">Search numbers</span><span lang="zh-CN">搜号</span><span lang="pa">ਨੰਬਰ ਲੱਭੋ</span></button>
+      </form>
+      <ul class="promise">
+        <li><span lang="en">One-time purchase</span><span lang="zh-CN">一次买断</span><span lang="pa">ਇੱਕੋ ਵਾਰ ਦੀ ਪੇਮੈਂਟ</span></li>
+        <li><span lang="en">No monthly fees from us</span><span lang="zh-CN">不收月租</span><span lang="pa">ਕੋਈ ਮਹੀਨਾਵਾਰ ਖ਼ਰਚਾ ਨਹੀਂ</span></li>
+        <li><span lang="en">Payment plans available</span><span lang="zh-CN">可以分期</span><span lang="pa">ਕਿਸ਼ਤਾਂ ’ਚ ਵੀ ਲੈ ਸਕਦੇ ਹੋ</span></li>
+        <li><span lang="en">Custom numbers on request</span><span lang="zh-CN">支持定制</span><span lang="pa">ਮਰਜ਼ੀ ਦਾ ਨੰਬਰ ਵੀ ਲੱਭ ਦਿੰਦੇ ਹਾਂ</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="numbers">
+    <div class="wrap">
+      <h2><span lang="en">Available numbers</span><span lang="zh-CN">在售靓号</span><span lang="pa">ਤਿਆਰ ਨੰਬਰ</span></h2>
+      <p class="sub"><span lang="en">Middle digits are hidden to protect our inventory. Reserve a number to see it in full. Prices are negotiable, and payment plans are available.</span><span lang="zh-CN">中间三位先藏起来，预订后告诉您完整号码。价格好商量，也能分期。</span><span lang="pa">ਵਿਚਕਾਰਲੇ ਤਿੰਨ ਅੰਕ ਹਾਲੇ ਲੁਕੋਏ ਹੋਏ ਨੇ, ਨੰਬਰ ਰਿਜ਼ਰਵ ਕਰਨ ’ਤੇ ਪੂਰਾ ਦੱਸ ਦਿਆਂਗੇ। ਰੇਟ ’ਤੇ ਗੱਲ ਹੋ ਸਕਦੀ ਹੈ, ਕਿਸ਼ਤਾਂ ਵੀ ਚੱਲਦੀਆਂ ਨੇ।</span></p>
+      <div class="filters" role="group">
+        <button class="chip" type="button" data-prov="all" aria-pressed="true"><span lang="en">All</span><span lang="zh-CN">全部</span><span lang="pa">ਸਾਰੇ</span></button>
+        <button class="chip" type="button" data-prov="Alberta" aria-pressed="false"><span lang="en">Alberta</span><span lang="zh-CN">阿尔伯塔</span><span lang="pa">ਅਲਬਰਟਾ</span></button>
+        <button class="chip" type="button" data-prov="BC" aria-pressed="false">BC</button>
+        <button class="chip" type="button" data-prov="Quebec" aria-pressed="false"><span lang="en">Quebec</span><span lang="zh-CN">魁北克</span><span lang="pa">ਕਿਊਬੈਕ</span></button>
+        <button class="chip" type="button" data-prov="Ontario" aria-pressed="false"><span lang="en">Ontario</span><span lang="zh-CN">安大略</span><span lang="pa">ਓਂਟਾਰੀਓ</span></button>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <p class="note"><span lang="en">Looking for a different area code or pattern? <a href="#custom">Order a custom number</a> and we’ll find it for you.</span><span lang="zh-CN">没找到想要的区号或尾号？<a href="#custom">找我们定制</a>，我们帮您找。</span><span lang="pa">ਪਸੰਦ ਦਾ ਏਰੀਆ ਕੋਡ ਜਾਂ ਨੰਬਰ ਨਹੀਂ ਲੱਭਿਆ? <a href="#custom">ਸਾਨੂੰ ਦੱਸੋ</a>, ਅਸੀਂ ਲੱਭ ਦਿਆਂਗੇ।</span></p>
+    </div>
+  </section>
+
+  <section id="custom">
+    <div class="wrap custom">
+      <div>
+        <h2><span lang="en">Want a specific number?</span><span lang="zh-CN">想要个特定的号？</span><span lang="pa">ਕੋਈ ਖ਼ਾਸ ਨੰਬਰ ਚਾਹੀਦਾ?</span></h2>
+        <p class="sub"><span lang="en">Tell us the area code and the pattern you want, like a matching ending, your street number or a year. We’ll find it and secure it for you.</span><span lang="zh-CN">告诉我们区号和您想要的规律，比如某个尾号、门牌号、生日年份，我们帮您找、帮您锁定。</span><span lang="pa">ਬੱਸ ਏਰੀਆ ਕੋਡ ਤੇ ਜਿਹੋ ਜਿਹਾ ਨੰਬਰ ਚਾਹੀਦਾ ਉਹ ਦੱਸੋ, ਜਿਵੇਂ ਆਖ਼ਰੀ ਅੰਕ, ਘਰ ਦਾ ਨੰਬਰ ਜਾਂ ਕੋਈ ਸਾਲ। ਲੱਭਣਾ ਤੇ ਪੱਕਾ ਕਰਨਾ ਸਾਡਾ ਕੰਮ।</span></p>
+      </div>
+      <div class="custom-box">
+        <p class="custom-price"><span lang="en">From $999</span><span lang="zh-CN">$999 起</span><span lang="pa">$999 ਤੋਂ ਸ਼ੁਰੂ</span></p>
+        <p class="custom-note"><span lang="en">Same as every number we sell: one-time purchase, transferred to your carrier, yours for good.</span><span lang="zh-CN">跟现货一样：一次买断，过户到您名下，号就是您的。</span><span lang="pa">ਬਾਕੀ ਨੰਬਰਾਂ ਵਾਂਗ: ਇੱਕੋ ਵਾਰ ਦੀ ਪੇਮੈਂਟ, ਤੁਹਾਡੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਟਰਾਂਸਫਰ, ਨੰਬਰ ਤੁਹਾਡਾ।</span></p>
+        <a class="btn" href="#contact" onclick="document.getElementById('want').value=tr('Custom number request','号码定制','ਖ਼ਾਸ ਨੰਬਰ ਚਾਹੀਦਾ')"><span lang="en">Request a custom number</span><span lang="zh-CN">我要定制</span><span lang="pa">ਆਪਣਾ ਨੰਬਰ ਲੱਭਵਾਓ</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2><span lang="en">How it works</span><span lang="zh-CN">购买流程</span><span lang="pa">ਨੰਬਰ ਕਿਵੇਂ ਲਈਏ</span></h2>
+      <p class="sub"><span lang="en">From choosing a number to taking calls on it.</span><span lang="zh-CN">从选号到接第一个电话，就这么几步。</span><span lang="pa">ਨੰਬਰ ਚੁਣਨ ਤੋਂ ਪਹਿਲੀ ਕਾਲ ਤੱਕ, ਬੱਸ ਇਹੀ ਕੁਝ ਕਦਮ।</span></p>
+      <ol class="steps">
+        <li><h3><span lang="en">Choose your number</span><span lang="zh-CN">选号</span><span lang="pa">ਨੰਬਰ ਚੁਣੋ</span></h3><p><span lang="en">Pick the number that fits your brand from our available list.</span><span lang="zh-CN">看中哪个选哪个，挑个跟您生意搭的。</span><span lang="pa">ਲਿਸਟ ’ਚੋਂ ਜਿਹੜਾ ਪਸੰਦ ਆਵੇ, ਆਪਣੇ ਕੰਮ ਮੁਤਾਬਕ ਚੁਣ ਲਓ।</span></p></li>
+        <li><h3><span lang="en">Reserve and pay</span><span lang="zh-CN">预订付款</span><span lang="pa">ਰਿਜ਼ਰਵ ਕਰੋ ਤੇ ਪੇਮੈਂਟ ਕਰੋ</span></h3><p><span lang="en">We confirm availability and hold it for you. Pay in full, or ask about a payment plan.</span><span lang="zh-CN">我们确认号码，先给您留着。可以一次付清，也可以聊聊分期。</span><span lang="pa">ਅਸੀਂ ਨੰਬਰ ਪੱਕਾ ਕਰਕੇ ਤੁਹਾਡੇ ਲਈ ਰੱਖ ਲੈਂਦੇ ਹਾਂ। ਪੂਰੇ ਪੈਸੇ ਇਕੱਠੇ ਦਿਓ ਜਾਂ ਕਿਸ਼ਤਾਂ ਦੀ ਗੱਲ ਕਰ ਲਓ।</span></p></li>
+        <li><h3><span lang="en">We transfer it to you</span><span lang="zh-CN">过户</span><span lang="pa">ਨੰਬਰ ਤੁਹਾਡੇ ਨਾਂ ’ਤੇ</span></h3><p><span lang="en">We move the number to your phone carrier, registered in your name.</span><span lang="zh-CN">我们把号转到您用的运营商，登记在您名下。</span><span lang="pa">ਅਸੀਂ ਨੰਬਰ ਤੁਹਾਡੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਤੁਹਾਡੇ ਨਾਂ ’ਤੇ ਟਰਾਂਸਫਰ ਕਰ ਦਿੰਦੇ ਹਾਂ।</span></p></li>
+        <li><h3><span lang="en">It’s yours for good</span><span lang="zh-CN">号就是您的了</span><span lang="pa">ਹੁਣ ਨੰਬਰ ਤੁਹਾਡਾ</span></h3><p><span lang="en">No rental, no monthly fees from us. You own the number outright.</span><span lang="zh-CN">不用租，不收月租，号码归您自己。</span><span lang="pa">ਨਾ ਕਿਰਾਇਆ, ਨਾ ਮਹੀਨਾਵਾਰ ਖ਼ਰਚਾ। ਨੰਬਰ ਪੂਰਾ ਤੁਹਾਡਾ।</span></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap own">
+      <div>
+        <h2><span lang="en">Own it, don’t rent it</span><span lang="zh-CN">买断，不用租</span><span lang="pa">ਕਿਰਾਏ ’ਤੇ ਨਹੀਂ, ਆਪਣਾ ਲਓ</span></h2>
+        <p class="sub"><span lang="en">Many number services charge every month and keep the number if you stop paying. With Number Pro, you buy once and keep it.</span><span lang="zh-CN">不少号码服务按月收钱，一停交费号就被收回去了。在 Number Pro，一次买断，号一直是您的。</span><span lang="pa">ਕਈ ਕੰਪਨੀਆਂ ਹਰ ਮਹੀਨੇ ਪੈਸੇ ਲੈਂਦੀਆਂ ਨੇ, ਤੇ ਪੈਸੇ ਬੰਦ ਹੁੰਦੇ ਹੀ ਨੰਬਰ ਵਾਪਸ। Number Pro ਤੋਂ ਇੱਕੋ ਵਾਰ ਲਓ, ਨੰਬਰ ਤੁਹਾਡੇ ਕੋਲ ਹੀ ਰਹੇਗਾ।</span></p>
+        <ul class="reasons">
+          <li><strong><span lang="en">Easy to remember</span><span lang="zh-CN">好记</span><span lang="pa">ਯਾਦ ਰੱਖਣਾ ਸੌਖਾ</span></strong><span><span lang="en">Customers recall it after seeing it once, on a truck, a sign or an ad.</span><span lang="zh-CN">印在车上、招牌上、广告上，客户看一眼就记住。</span><span lang="pa">ਟਰੱਕ, ਬੋਰਡ ਜਾਂ ਐਡ ’ਤੇ ਇੱਕ ਵਾਰ ਦੇਖਿਆ, ਤੇ ਗਾਹਕ ਨੂੰ ਯਾਦ ਹੋ ਗਿਆ।</span></span></li>
+          <li><strong><span lang="en">Looks established</span><span lang="zh-CN">看着就正规</span><span lang="pa">ਕੰਮ ਪੱਕਾ ਲੱਗਦਾ</span></strong><span><span lang="en">A clean number tells people you’re a serious business.</span><span lang="zh-CN">号码一好，客户一看就觉得您是正经做生意的。</span><span lang="pa">ਵਧੀਆ ਨੰਬਰ ਦੇਖ ਕੇ ਗਾਹਕ ਨੂੰ ਲੱਗਦਾ ਕਿ ਤੁਹਾਡਾ ਕੰਮ ਪੱਕਾ ਤੇ ਭਰੋਸੇਯੋਗ ਹੈ।</span></span></li>
+          <li><strong><span lang="en">Grows with you</span><span lang="zh-CN">越用越值钱</span><span lang="pa">ਵਕਤ ਨਾਲ ਕਦਰ ਵਧਦੀ</span></strong><span><span lang="en">Every ad and card you print builds value into a number you own.</span><span lang="zh-CN">每打一次广告、每发一张名片，都在给自己的号攒价值。</span><span lang="pa">ਹਰ ਐਡ ਤੇ ਹਰ ਕਾਰਡ ਨਾਲ ਤੁਹਾਡੇ ਆਪਣੇ ਨੰਬਰ ਦੀ ਕਦਰ ਵਧਦੀ ਜਾਂਦੀ ਹੈ।</span></span></li>
+        </ul>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="compare">
+          <thead><tr><th></th><th>Number Pro</th><th><span lang="en">Rented number</span><span lang="zh-CN">租的号</span><span lang="pa">ਕਿਰਾਏ ਵਾਲਾ ਨੰਬਰ</span></th></tr></thead>
+          <tbody>
+            <tr><td><span lang="en">Who owns it</span><span lang="zh-CN">号归谁</span><span lang="pa">ਨੰਬਰ ਕਿਸਦਾ</span></td><td><span lang="en">You</span><span lang="zh-CN">您</span><span lang="pa">ਤੁਹਾਡਾ</span></td><td><span lang="en">The provider</span><span lang="zh-CN">服务商</span><span lang="pa">ਕੰਪਨੀ ਦਾ</span></td></tr>
+            <tr><td><span lang="en">Monthly fee</span><span lang="zh-CN">月租</span><span lang="pa">ਮਹੀਨਾਵਾਰ ਖ਼ਰਚਾ</span></td><td><span lang="en">None</span><span lang="zh-CN">没有</span><span lang="pa">ਕੋਈ ਨਹੀਂ</span></td><td><span lang="en">Ongoing</span><span lang="zh-CN">每月都交</span><span lang="pa">ਹਰ ਮਹੀਨੇ</span></td></tr>
+            <tr><td><span lang="en">Choose your carrier</span><span lang="zh-CN">能自选运营商</span><span lang="pa">ਆਪਣੀ ਫ਼ੋਨ ਕੰਪਨੀ ਚੁਣੋ</span></td><td><span lang="en">Yes</span><span lang="zh-CN">能</span><span lang="pa">ਹਾਂ</span></td><td><span lang="en">Usually no</span><span lang="zh-CN">一般不能</span><span lang="pa">ਅਕਸਰ ਨਹੀਂ</span></td></tr>
+            <tr><td><span lang="en">If you stop paying</span><span lang="zh-CN">停止交费后</span><span lang="pa">ਪੈਸੇ ਬੰਦ ਕਰਨ ’ਤੇ</span></td><td><span lang="en">Still yours</span><span lang="zh-CN">还是您的</span><span lang="pa">ਫਿਰ ਵੀ ਤੁਹਾਡਾ</span></td><td><span lang="en">You lose it</span><span lang="zh-CN">号就没了</span><span lang="pa">ਨੰਬਰ ਗਿਆ</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq">
+      <h2><span lang="en">Questions</span><span lang="zh-CN">常见问题</span><span lang="pa">ਆਮ ਸਵਾਲ</span></h2>
+      <details><summary><span lang="en">Do I own the number?</span><span lang="zh-CN">号码是我自己的吗？</span><span lang="pa">ਨੰਬਰ ਮੇਰਾ ਆਪਣਾ ਹੋਵੇਗਾ?</span></summary><p><span lang="en">Yes. Once the transfer is complete, the number is registered in your name with your carrier. It’s yours permanently.</span><span lang="zh-CN">是的。过户完成后，号码登记在您名下的运营商账户里，一直归您用。</span><span lang="pa">ਹਾਂ ਜੀ। ਟਰਾਂਸਫਰ ਹੋਣ ਤੋਂ ਬਾਅਦ ਨੰਬਰ ਤੁਹਾਡੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਤੁਹਾਡੇ ਨਾਂ ’ਤੇ ਹੁੰਦਾ ਹੈ, ਹਮੇਸ਼ਾ ਲਈ ਤੁਹਾਡਾ।</span></p></details>
+      <details><summary><span lang="en">Are there monthly fees?</span><span lang="zh-CN">要交月租吗？</span><span lang="pa">ਮਹੀਨੇ ਦੇ ਪੈਸੇ ਲੱਗਦੇ ਨੇ?</span></summary><p><span lang="en">Not from us. It’s a one-time purchase. You only pay your carrier’s regular phone service fees.</span><span lang="zh-CN">我们不收月租，一次买断。您只交运营商正常的话费。</span><span lang="pa">ਸਾਡੇ ਵੱਲੋਂ ਨਹੀਂ, ਬੱਸ ਇੱਕੋ ਵਾਰ ਦੀ ਪੇਮੈਂਟ। ਤੁਸੀਂ ਸਿਰਫ਼ ਆਪਣੀ ਫ਼ੋਨ ਕੰਪਨੀ ਦਾ ਆਮ ਬਿੱਲ ਭਰਨਾ ਹੈ।</span></p></details>
+      <details><summary><span lang="en">Can I keep my current phone provider?</span><span lang="zh-CN">能用我现在的运营商吗？</span><span lang="pa">ਮੈਂ ਆਪਣੀ ਹੁਣ ਵਾਲੀ ਫ਼ੋਨ ਕੰਪਨੀ ਰੱਖ ਸਕਦਾ?</span></summary><p><span lang="en">Yes. We transfer the number to the carrier of your choice.</span><span lang="zh-CN">能。您用哪家，我们就转到哪家。</span><span lang="pa">ਹਾਂ ਜੀ। ਜਿਹੜੀ ਕੰਪਨੀ ਤੁਸੀਂ ਵਰਤਦੇ ਹੋ, ਨੰਬਰ ਉੱਥੇ ਹੀ ਟਰਾਂਸਫਰ ਕਰ ਦਿੰਦੇ ਹਾਂ।</span></p></details>
+      <details><summary><span lang="en">How long does the transfer take?</span><span lang="zh-CN">过户要多长时间？</span><span lang="pa">ਟਰਾਂਸਫਰ ’ਚ ਕਿੰਨੇ ਦਿਨ ਲੱਗਦੇ?</span></summary><p><span lang="en">Usually [X] business days after payment.</span><span lang="zh-CN">付款后一般 [X] 个工作日。</span><span lang="pa">ਪੇਮੈਂਟ ਤੋਂ ਬਾਅਦ ਆਮ ਤੌਰ ’ਤੇ [X] ਕੰਮ ਵਾਲੇ ਦਿਨ।</span></p></details>
+      <details><summary><span lang="en">Do you offer payment plans?</span><span lang="zh-CN">能分期吗？</span><span lang="pa">ਕਿਸ਼ਤਾਂ ’ਚ ਲੈ ਸਕਦੇ ਹਾਂ?</span></summary><p><span lang="en">Yes. Contact us and we’ll work out a plan that suits your business.</span><span lang="zh-CN">能。联系我们，按您的情况商量个方案。</span><span lang="pa">ਹਾਂ ਜੀ। ਫ਼ੋਨ ਕਰੋ, ਤੁਹਾਡੇ ਹਿਸਾਬ ਨਾਲ ਗੱਲ ਬਣਾ ਲਵਾਂਗੇ।</span></p></details>
+      <details><summary><span lang="en">Can you find a number that isn’t listed?</span><span lang="zh-CN">列表里没有我想要的号怎么办？</span><span lang="pa">ਜਿਹੜਾ ਨੰਬਰ ਲਿਸਟ ’ਚ ਨਹੀਂ, ਉਹ ਮਿਲ ਸਕਦਾ?</span></summary><p><span lang="en">Yes. Tell us the area code and pattern you want, and we’ll source it for you. Custom numbers start from $999.</span><span lang="zh-CN">可以定制。告诉我们区号和规律，我们帮您找，$999 起。</span><span lang="pa">ਹਾਂ ਜੀ। ਏਰੀਆ ਕੋਡ ਤੇ ਜਿਹੋ ਜਿਹਾ ਨੰਬਰ ਚਾਹੀਦਾ ਦੱਸੋ, ਅਸੀਂ ਲੱਭ ਦਿਆਂਗੇ। $999 ਤੋਂ ਸ਼ੁਰੂ।</span></p></details>
+      <details><summary><span lang="en">Why are some digits hidden?</span><span lang="zh-CN">为什么中间几位看不到？</span><span lang="pa">ਵਿਚਕਾਰਲੇ ਅੰਕ ਕਿਉਂ ਲੁਕੋਏ ਨੇ?</span></summary><p><span lang="en">To protect our inventory. Reserve a number or contact us to see the full number.</span><span lang="zh-CN">怕号被人抢先注册。预订或者联系我们，就能看到完整号码。</span><span lang="pa">ਤਾਂ ਜੋ ਕੋਈ ਹੋਰ ਨੰਬਰ ਪਹਿਲਾਂ ਨਾ ਚੁੱਕ ਲਵੇ। ਰਿਜ਼ਰਵ ਕਰੋ ਜਾਂ ਫ਼ੋਨ ਕਰੋ, ਪੂਰਾ ਨੰਬਰ ਦੱਸ ਦਿਆਂਗੇ।</span></p></details>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2><span lang="en">About Number Pro</span><span lang="zh-CN">关于 Number Pro</span><span lang="pa">Number Pro ਬਾਰੇ</span></h2>
+        <p class="sub"><span lang="en">Number Pro is a Calgary company that helps Canadian businesses get phone numbers their customers remember.</span><span lang="zh-CN">Number Pro 是卡尔加里本地公司，专门帮加拿大的商家拿到客户记得住的电话号码。</span><span lang="pa">Number Pro ਕੈਲਗਰੀ ਦੀ ਆਪਣੀ ਕੰਪਨੀ ਹੈ। ਅਸੀਂ ਕੈਨੇਡਾ ਦੇ ਕਾਰੋਬਾਰਾਂ ਨੂੰ ਐਸੇ ਨੰਬਰ ਦਿੰਦੇ ਹਾਂ ਜੋ ਗਾਹਕਾਂ ਨੂੰ ਝੱਟ ਯਾਦ ਹੋ ਜਾਣ।</span></p>
+        <p class="about-text"><span lang="en">We hold premium four-of-a-kind numbers across Alberta, BC, Ontario and Quebec, and we find custom numbers on request. Every number we sell is transferred to the buyer’s own carrier, in their name. No rental and no monthly fees from us, just a number that works for your business from the first ad you run.</span><span lang="zh-CN">我们手里有阿尔伯塔、BC、安大略和魁北克的四连号现货，也接定制。每个号都直接过户到买家自己的运营商账户，不用租、不收月租。从您打第一个广告起，这个号就开始帮您揽生意。</span><span lang="pa">ਸਾਡੇ ਕੋਲ ਅਲਬਰਟਾ, ਬੀ.ਸੀ., ਓਂਟਾਰੀਓ ਤੇ ਕਿਊਬੈਕ ਦੇ ਵਧੀਆ ਨੰਬਰ ਤਿਆਰ ਨੇ, ਤੇ ਮਰਜ਼ੀ ਦਾ ਨੰਬਰ ਵੀ ਲੱਭ ਦਿੰਦੇ ਹਾਂ। ਹਰ ਨੰਬਰ ਸਿੱਧਾ ਖ਼ਰੀਦਣ ਵਾਲੇ ਦੀ ਆਪਣੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਉਸਦੇ ਨਾਂ ’ਤੇ ਜਾਂਦਾ ਹੈ। ਨਾ ਕਿਰਾਇਆ, ਨਾ ਮਹੀਨੇ ਦਾ ਖ਼ਰਚਾ। ਪਹਿਲੀ ਐਡ ਤੋਂ ਹੀ ਨੰਬਰ ਤੁਹਾਡੇ ਲਈ ਕੰਮ ਲਿਆਉਣ ਲੱਗ ਪੈਂਦਾ ਹੈ।</span></p>
+      </div>
+      <ul class="reasons">
+        <li><strong><span lang="en">Calgary based, Canada wide</span><span lang="zh-CN">卡尔加里本地，全加拿大都做</span><span lang="pa">ਕੈਲਗਰੀ ਦੇ, ਪੂਰੇ ਕੈਨੇਡਾ ’ਚ ਕੰਮ</span></strong><span><span lang="en">A local team serving businesses from coast to coast.</span><span lang="zh-CN">本地团队，全国各地的生意都接。</span><span lang="pa">ਲੋਕਲ ਟੀਮ, ਕੈਨੇਡਾ ’ਚ ਕਿਤੇ ਵੀ ਤੁਹਾਡਾ ਕੰਮ ਕਰਦੇ ਹਾਂ।</span></span></li>
+        <li><strong><span lang="en">Numbers we hold ourselves</span><span lang="zh-CN">号在我们自己手里</span><span lang="pa">ਨੰਬਰ ਸਾਡੇ ਆਪਣੇ ਹੱਥ ’ਚ</span></strong><span><span lang="en">Every listed number is in our hands before we sell it, so what you reserve is what you get.</span><span lang="zh-CN">列表上的号都是我们实实在在持有的，您订哪个就拿哪个。</span><span lang="pa">ਲਿਸਟ ਵਾਲਾ ਹਰ ਨੰਬਰ ਸਾਡੇ ਕੋਲ ਹੈ, ਜਿਹੜਾ ਰਿਜ਼ਰਵ ਕਰੋਗੇ ਉਹੀ ਮਿਲੇਗਾ।</span></span></li>
+        <li><strong><span lang="en">Transfer handled for you</span><span lang="zh-CN">过户我们全包</span><span lang="pa">ਟਰਾਂਸਫਰ ਦਾ ਸਾਰਾ ਕੰਮ ਸਾਡਾ</span></strong><span><span lang="en">We take care of moving the number to your carrier, start to finish.</span><span lang="zh-CN">转号的手续从头到尾我们来办，您不用操心。</span><span lang="pa">ਸ਼ੁਰੂ ਤੋਂ ਅਖ਼ੀਰ ਤੱਕ ਸਾਰਾ ਕਾਗਜ਼ੀ ਕੰਮ ਅਸੀਂ ਕਰਦੇ ਹਾਂ, ਤੁਸੀਂ ਬੇਫ਼ਿਕਰ ਰਹੋ।</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Stories: keep only with each company's permission -->
+  <section id="stories">
+    <div class="wrap">
+      <h2><span lang="en">What customers say</span><span lang="zh-CN">客户怎么说</span><span lang="pa">ਗਾਹਕ ਕੀ ਕਹਿੰਦੇ ਨੇ</span></h2>
+      <p class="sub"><span lang="en">Businesses that use a memorable number every day.</span><span lang="zh-CN">天天在用好记号码的商家。</span><span lang="pa">ਉਹ ਕਾਰੋਬਾਰ ਜਿਹੜੇ ਰੋਜ਼ ਸੌਖੇ ਨੰਬਰ ਨਾਲ ਕੰਮ ਕਰਦੇ ਨੇ।</span></p>
+      <div class="quotes">
+        <blockquote><p><span lang="en">“Our 416-XXX-5555 number is everywhere. Customers remember it instantly.”</span><span lang="zh-CN">“我们的 416-XXX-5555 到处都是，客户一下就记住了。”</span><span lang="pa">“ਸਾਡਾ 416-XXX-5555 ਹਰ ਥਾਂ ਲੱਗਿਆ ਹੈ। ਗਾਹਕਾਂ ਨੂੰ ਝੱਟ ਯਾਦ ਹੋ ਜਾਂਦਾ ਹੈ।”</span></p><footer><strong>Beck Taxi</strong>, <span lang="en">Toronto, ON</span><span lang="zh-CN">多伦多</span><span lang="pa">ਟੋਰਾਂਟੋ</span></footer></blockquote>
+        <blockquote><p><span lang="en">“The right number makes our business look bigger, stronger and more professional.”</span><span lang="zh-CN">“号码一好，生意看着就更大、更正规。”</span><span lang="pa">“ਵਧੀਆ ਨੰਬਰ ਨਾਲ ਸਾਡਾ ਕੰਮ ਵੱਡਾ ਤੇ ਪੱਕਾ ਲੱਗਦਾ ਹੈ।”</span></p><footer><strong>Calgary United Cabs</strong>, <span lang="en">Calgary, AB</span><span lang="zh-CN">卡尔加里</span><span lang="pa">ਕੈਲਗਰੀ</span></footer></blockquote>
+        <blockquote><p><span lang="en">“We saw an immediate increase in calls after switching to a memorable number.”</span><span lang="zh-CN">“换了好记的号以后，电话一下就多起来了。”</span><span lang="pa">“ਸੌਖਾ ਨੰਬਰ ਲੈਣ ਤੋਂ ਬਾਅਦ ਕਾਲਾਂ ਇੱਕਦਮ ਵਧ ਗਈਆਂ।”</span></p><footer><strong>Vancouver Taxi</strong>, <span lang="en">Vancouver, BC</span><span lang="zh-CN">温哥华</span><span lang="pa">ਵੈਨਕੂਵਰ</span></footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div class="direct">
+        <h2><span lang="en">Reserve a number</span><span lang="zh-CN">预订号码</span><span lang="pa">ਨੰਬਰ ਰਿਜ਼ਰਵ ਕਰੋ</span></h2>
+        <p class="sub"><span lang="en">Send us the number you want, or call to talk it through.</span><span lang="zh-CN">说说您想要哪个号，或者直接打电话聊。</span><span lang="pa">ਜਿਹੜਾ ਨੰਬਰ ਚਾਹੀਦਾ ਦੱਸੋ, ਜਾਂ ਸਿੱਧਾ ਫ਼ੋਨ ਕਰਕੇ ਗੱਲ ਕਰੋ।</span></p>
+        <a href="tel:+18259251111">825-925-1111</a>
+        <a href="mailto:info@numberpro.ca">info@numberpro.ca</a>
+        <div class="reach">
+          <a class="btn" href="tel:+18259251111"><span lang="en">Call</span><span lang="zh-CN">打电话</span><span lang="pa">ਫ਼ੋਨ ਕਰੋ</span></a>
+          <a class="btn ghost" href="sms:+18259251111"><span lang="en">Text</span><span lang="zh-CN">发短信</span><span lang="pa">ਮੈਸੇਜ ਕਰੋ</span></a>
+          <a class="btn ghost" href="mailto:info@numberpro.ca?subject=Number%20inquiry%20%E5%8F%B7%E7%A0%81%E5%92%A8%E8%AF%A2"><span lang="en">Email</span><span lang="zh-CN">发邮件</span><span lang="pa">ਈਮੇਲ ਕਰੋ</span></a>
+        </div>
+        <address class="addr">Number Pro<br>6115 3 St SE, Building D<br>Calgary, AB<br><a href="https://www.google.com/maps/search/?api=1&query=6115+3+St+SE+Building+D+Calgary+AB" target="_blank" rel="noopener"><span lang="en">Open in Google Maps</span><span lang="zh-CN">在 Google 地图里打开</span><span lang="pa">Google Maps ’ਤੇ ਦੇਖੋ</span></a></address>
+      </div>
+      <form id="reserve" onsubmit="event.preventDefault(); sendReserve();">
+        <label><span lang="en">Your name</span><span lang="zh-CN">怎么称呼您</span><span lang="pa">ਤੁਹਾਡਾ ਨਾਂ</span><input name="name" required autocomplete="name"></label>
+        <label><span lang="en">Business name</span><span lang="zh-CN">公司名称</span><span lang="pa">ਕਾਰੋਬਾਰ ਦਾ ਨਾਂ</span><input name="biz" autocomplete="organization"></label>
+        <label><span lang="en">Phone or email</span><span lang="zh-CN">电话或邮箱</span><span lang="pa">ਫ਼ੋਨ ਜਾਂ ਈਮੇਲ</span><input name="reach" required></label>
+        <label><span lang="en">Number you want</span><span lang="zh-CN">想要的号码</span><span lang="pa">ਕਿਹੜਾ ਨੰਬਰ ਚਾਹੀਦਾ</span><input name="want" id="want" data-ph-en="e.g. 825-XXX-3333" data-ph-zh="比如 825-XXX-3333" data-ph-pa="ਜਿਵੇਂ 825-XXX-3333"></label>
+        <label><span lang="en">Anything else</span><span lang="zh-CN">其他要求</span><span lang="pa">ਹੋਰ ਕੋਈ ਗੱਲ</span><textarea name="msg" data-ph-en="Area code, pattern, budget or payment plan questions" data-ph-zh="区号、号码规律、预算、分期，都可以写" data-ph-pa="ਏਰੀਆ ਕੋਡ, ਨੰਬਰ, ਬਜਟ ਜਾਂ ਕਿਸ਼ਤਾਂ, ਜੋ ਮਰਜ਼ੀ ਲਿਖੋ"></textarea></label>
+        <button class="btn" type="submit"><span lang="en">Send reservation request</span><span lang="zh-CN">提交预订</span><span lang="pa">ਭੇਜ ਦਿਓ</span></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Number Pro, 6115 3 St SE, Building D, Calgary, AB. <span lang="en">All rights reserved.</span><span lang="zh-CN">版权所有。</span><span lang="pa">ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ।</span></span>
+    <span><a href="/privacy"><span lang="en">Privacy policy</span><span lang="zh-CN">隐私政策</span><span lang="pa">ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ</span></a></span>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn" href="tel:+18259251111"><span lang="en">Call</span><span lang="zh-CN">打电话</span><span lang="pa">ਫ਼ੋਨ ਕਰੋ</span></a>
+  <a class="btn ghost" href="sms:+18259251111"><span lang="en">Text</span><span lang="zh-CN">发短信</span><span lang="pa">ਮੈਸੇਜ ਕਰੋ</span></a>
+  <a class="btn ghost" href="mailto:info@numberpro.ca?subject=Number%20inquiry%20%E5%8F%B7%E7%A0%81%E5%92%A8%E8%AF%A2"><span lang="en">Email</span><span lang="zh-CN">发邮件</span><span lang="pa">ਈਮੇਲ ਕਰੋ</span></a>
+</div>
+<script>
+// Language: remembers the visitor's choice; otherwise follows their browser language
+const TITLES = {
+  en: "Number Pro | Memorable Phone Numbers, Calgary and Canada wide",
+  zh: "Number Pro | 加拿大靓号 | 卡尔加里",
+  pa: "Number Pro | ਸੌਖੇ ਫ਼ੋਨ ਨੰਬਰ | ਕੈਲਗਰੀ"
+};
+function lang() { return document.documentElement.dataset.l || "en"; }
+function isZh() { return lang() === "zh"; }
+function tr(en, zh, pa) { return { en, zh, pa }[lang()]; }
+function setLang(l) {
+  const root = document.documentElement;
+  root.dataset.l = l;
+  root.lang = { en: "en", zh: "zh-CN", pa: "pa" }[l];
+  document.title = TITLES[l];
+  document.querySelectorAll("[data-ph-en]").forEach(el => el.placeholder = el.dataset["ph" + l[0].toUpperCase() + l[1]]);
+  document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === l));
+  try { localStorage.setItem("np-lang", l); } catch (e) {}
+  if (typeof render === "function") render();
+}
+(function () {
+  let saved = null;
+  try { saved = localStorage.getItem("np-lang"); } catch (e) {}
+  const nav = (navigator.language || "").toLowerCase();
+  setLang(["en", "zh", "pa"].includes(saved) ? saved : nav.startsWith("zh") ? "zh" : nav.startsWith("pa") ? "pa" : "en");
+})();
+</script>
+<script>
+// Edit this list to update inventory. "price" can be a string like "$2,500" or leave null.
+const NUMBERS = [
+  { area: "825", tail: "3333", prov: "Alberta", status: "available", price: null },
+  { area: "825", tail: "3333", prov: "Alberta", status: "available", price: null },
+  { area: "825", tail: "5555", prov: "Alberta", status: "available", price: null },
+  { area: "587", tail: "4444", prov: "Alberta", status: "available", price: null },
+  { area: "236", tail: "7777", prov: "BC", status: "available", price: null },
+  { area: "236", tail: "5555", prov: "BC", status: "available", price: null },
+  { area: "819", tail: "9999", prov: "Quebec", status: "available", price: null },
+  { area: "437", tail: "8888", prov: "Ontario", status: "available", price: null },
+  // Sold (transferred to customers)
+  { area: "647", tail: "8888", prov: "Ontario", status: "sold", price: null },
+  { area: "437", tail: "3333", prov: "Ontario", status: "sold", price: null },
+  { area: "825", tail: "7777", prov: "Alberta", status: "sold", price: null },
+  { area: "825", tail: "1111", prov: "Alberta", status: "sold", price: null },
+  { area: "825", tail: "9999", prov: "Alberta", status: "sold", price: null },
+  { area: "825", tail: "2222", prov: "Alberta", status: "sold", price: null }
+];
+
+let prov = "all", query = "";
+const grid = document.getElementById("grid");
+
+function render() {
+  const q = query.replace(/\D/g, "");
+  const list = NUMBERS
+    .filter(n => prov === "all" || n.prov === prov)
+    .filter(n => !q || (n.area + n.tail).includes(q))
+    .sort((a, b) => (a.status === "sold") - (b.status === "sold"));
+  if (!list.length) {
+    grid.innerHTML = '<p class="empty">' + tr(
+      'No numbers match that search. Try another area code, or <a href="#custom">order a custom number</a>.',
+      '没搜到合适的号。换个区号试试，或者<a href="#custom">找我们定制</a>。',
+      'ਇਹੋ ਜਿਹਾ ਨੰਬਰ ਨਹੀਂ ਮਿਲਿਆ। ਹੋਰ ਏਰੀਆ ਕੋਡ ਦੇਖੋ, ਜਾਂ <a href="#custom">ਸਾਨੂੰ ਲੱਭਣ ਲਈ ਕਹੋ</a>।') + '</p>';
+    return;
+  }
+  grid.innerHTML = list.map(n => {
+    const sold = n.status === "sold";
+    const label = `${n.area}-XXX-${n.tail}`;
+    const ZH = { Alberta: "阿尔伯塔", BC: "BC", Quebec: "魁北克（加蒂诺，挨着渥太华）", Ontario: "安大略" };
+    const PA = { Alberta: "ਅਲਬਰਟਾ", BC: "ਬੀ.ਸੀ.", Quebec: "ਕਿਊਬੈਕ (ਗਾਟੀਨੋ, ਓਟਵਾ ਦੇ ਕੋਲ)", Ontario: "ਓਂਟਾਰੀਓ" };
+    const region = tr(n.prov === "Quebec" ? "Quebec (Gatineau, Ottawa region)" : n.prov, ZH[n.prov] || n.prov, PA[n.prov] || n.prov);
+    return `<article class="num${sold ? " sold" : ""}">
+      <div class="digits">${n.area}-XXX-<mark>${n.tail}</mark></div>
+      <div class="meta">${tr(`${n.area} area code, ${region}`, `${n.area} 区号，${region}`, `${n.area} ਏਰੀਆ ਕੋਡ, ${region}`)}</div>
+      <div class="row">
+        ${sold ? '<span class="sold-tag">${tr("Sold", "已售", "ਵਿਕ ਗਿਆ")}</span>' : `<button class="btn" type="button" data-num="${label}">${tr("Reserve", "预订", "ਰਿਜ਼ਰਵ ਕਰੋ")}</button>`}
+      </div>
+    </article>`;
+  }).join("");
+}
+
+document.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => {
+  prov = c.dataset.prov;
+  document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === c));
+  render();
+}));
+
+grid.addEventListener("click", e => {
+  const b = e.target.closest("[data-num]");
+  if (!b) return;
+  document.getElementById("want").value = b.dataset.num;
+  document.getElementById("contact").scrollIntoView();
+  document.querySelector('#reserve input[name="name"]').focus({ preventScroll: true });
+});
+
+function goSearch() {
+  query = document.getElementById("hero-q").value;
+  render();
+  document.getElementById("numbers").scrollIntoView();
+}
+
+// Opens the visitor's email app. Replace with your form service (e.g. Formspree) to receive submissions directly.
+function sendReserve() {
+  const f = new FormData(document.getElementById("reserve"));
+  const L = tr(["Name", "Business", "Contact", "Number wanted"], ["称呼", "公司", "联系方式", "想要的号码"], ["ਨਾਂ", "ਕਾਰੋਬਾਰ", "ਫ਼ੋਨ/ਈਮੇਲ", "ਚਾਹੀਦਾ ਨੰਬਰ"]);
+  const sep = isZh() ? "：" : ": ";
+  const body = [f.get("name"), f.get("biz"), f.get("reach"), f.get("want")].map((v, i) => L[i] + sep + v).join("\n") + "\n\n" + f.get("msg");
+  const subject = tr("Number reservation: ", "号码预订：", "ਨੰਬਰ ਰਿਜ਼ਰਵੇਸ਼ਨ: ") + (f.get("want") || tr("request", "咨询", "ਬੇਨਤੀ"));
+  location.href = `mailto:info@numberpro.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// Hero dial: cycles 1111 → 9999 until the visitor picks one
+const dialTail = document.getElementById("dial-tail");
+const tiles = document.querySelectorAll(".tails button");
+let d = 1, cycling = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+function showTail(t) {
+  dialTail.textContent = t;
+  tiles.forEach(b => b.classList.toggle("on", b.dataset.tail === t));
+}
+showTail("1111");
+const timer = setInterval(() => {
+  if (!cycling) return;
+  d = d % 9 + 1;
+  showTail(String(d).repeat(4));
+}, 1400);
+
+tiles.forEach(b => b.addEventListener("click", () => {
+  cycling = false; clearInterval(timer);
+  showTail(b.dataset.tail);
+  query = b.dataset.tail;
+  document.getElementById("hero-q").value = b.dataset.tail;
+  render();
+  document.getElementById("numbers").scrollIntoView();
+}));
+
+document.querySelectorAll(".langs button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.l)));
+render();
+</script>
 </body>
 </html>
