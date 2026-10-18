@@ -92,7 +92,7 @@ button.lang { background: none; border: 0; font: inherit; cursor: pointer; paddi
 .hero p.lede { font-size: 1.25rem; color: var(--muted); max-width: 44ch; margin: 0 0 2rem; }
 .dial {
   font-weight: 800; font-stretch: 62%; line-height: 0.9; letter-spacing: -0.02em;
-  font-size: clamp(3rem, 11vw, 8.5rem); margin: 0 0 1.5rem; white-space: nowrap;
+  font-size: clamp(2.4rem, 11vw, 8.5rem); margin: 0 0 1.5rem; white-space: nowrap;
 }
 .tails { display: grid; grid-template-columns: repeat(9, 1fr); gap: 0.5rem; max-width: 900px; margin: 0 0 2.5rem; }
 .tails button {
@@ -149,6 +149,12 @@ h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 800; font-stretch: 1
 .custom { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
 .custom-box { background: var(--surface); border: 2px solid var(--ink); border-radius: 12px; padding: 1.75rem; }
 .custom-price { font-size: 2.5rem; font-weight: 800; font-stretch: 75%; line-height: 1; margin: 0 0 0.75rem; }
+.tiers { margin: 0 0 1.25rem; }
+.custom > * { min-width: 0; }
+.tier { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
+.tier:first-child { padding-top: 0; }
+.tier-name { margin: 0; color: var(--muted); }
+.tier-price { margin: 0; font-weight: 800; font-size: 1.4rem; font-stretch: 80%; white-space: nowrap; text-align: right; }
 .custom-note { color: var(--muted); margin: 0 0 1.25rem; }
 @media (max-width: 760px) { .custom { grid-template-columns: 1fr; gap: 1.5rem; } }
 
@@ -310,7 +316,10 @@ form textarea { min-height: 100px; resize: vertical; }
         <p class="sub"><span lang="en">Tell us the area code and the pattern you want, like a matching ending, your street number or a year. We’ll find it and secure it for you.</span><span lang="zh-CN">告诉我们区号和您想要的规律，比如某个尾号、门牌号、生日年份，我们帮您找、帮您锁定。</span><span lang="pa">ਬੱਸ ਏਰੀਆ ਕੋਡ ਤੇ ਜਿਹੋ ਜਿਹਾ ਨੰਬਰ ਚਾਹੀਦਾ ਉਹ ਦੱਸੋ, ਜਿਵੇਂ ਆਖ਼ਰੀ ਅੰਕ, ਘਰ ਦਾ ਨੰਬਰ ਜਾਂ ਕੋਈ ਸਾਲ। ਲੱਭਣਾ ਤੇ ਪੱਕਾ ਕਰਨਾ ਸਾਡਾ ਕੰਮ।</span><span lang="fr">Dites-nous l’indicatif et la combinaison que vous voulez, comme des chiffres identiques à la fin, votre numéro civique ou une année. On le trouve et on vous le réserve.</span></p>
       </div>
       <div class="custom-box">
-        <p class="custom-price"><span lang="en">From $999</span><span lang="zh-CN">$999 起</span><span lang="pa">$999 ਤੋਂ ਸ਼ੁਰੂ</span><span lang="fr">À partir de 999 $</span></p>
+        <div class="tiers">
+          <div class="tier"><p class="tier-name"><span lang="en">Simple custom numbers (birthdays, anniversaries, ABAB or AABB)</span><span lang="zh-CN">简单号码定制（生日、纪念日、ABAB 或 AABB）</span><span lang="pa">ਸਧਾਰਨ ਕਸਟਮ ਨੰਬਰ (ਜਨਮ ਦਿਨ, ਵਰ੍ਹੇਗੰਢ, ABAB ਜਾਂ AABB)</span><span lang="fr">Numéros sur mesure simples (date de naissance, anniversaire, ABAB ou AABB)</span></p><p class="tier-price"><span lang="en">From $999</span><span lang="zh-CN">$999 起</span><span lang="pa">$999 ਤੋਂ ਸ਼ੁਰੂ</span><span lang="fr">À partir de 999 $</span></p></div>
+          <div class="tier"><p class="tier-name"><span lang="en">Four-of-a-kind (1111–9999)</span><span lang="zh-CN">四连号（1111–9999）</span><span lang="pa">ਚਾਰ ਇੱਕੋ ਜਿਹੇ ਅੰਕ (1111–9999)</span><span lang="fr">Quatre chiffres identiques (1111–9999)</span></p><p class="tier-price"><span lang="en">Price on request</span><span lang="zh-CN">价格面议</span><span lang="pa">ਰੇਟ ਗੱਲਬਾਤ ਨਾਲ</span><span lang="fr">Prix sur demande</span></p></div>
+        </div>
         <p class="custom-note"><span lang="en">Same as every number we sell: one-time purchase, transferred to your carrier, yours for good.</span><span lang="zh-CN">跟现货一样：一次买断，过户到您名下，号就是您的。</span><span lang="pa">ਬਾਕੀ ਨੰਬਰਾਂ ਵਾਂਗ: ਇੱਕੋ ਵਾਰ ਦੀ ਪੇਮੈਂਟ, ਤੁਹਾਡੀ ਫ਼ੋਨ ਕੰਪਨੀ ’ਚ ਟਰਾਂਸਫਰ, ਨੰਬਰ ਤੁਹਾਡਾ।</span><span lang="fr">Comme tous nos numéros : achat unique, transfert chez votre fournisseur, et il est à vous pour de bon.</span></p>
         <a class="btn" href="#contact" onclick="document.getElementById('want').value=tr('Custom number request','号码定制','ਖ਼ਾਸ ਨੰਬਰ ਚਾਹੀਦਾ','Demande de numéro sur mesure')"><span lang="en">Request a custom number</span><span lang="zh-CN">我要定制</span><span lang="pa">ਆਪਣਾ ਨੰਬਰ ਲੱਭਵਾਓ</span><span lang="fr">Demander un numéro sur mesure</span></a>
       </div>
@@ -363,7 +372,7 @@ form textarea { min-height: 100px; resize: vertical; }
       <details><summary><span lang="en">Can I keep my current phone provider?</span><span lang="zh-CN">能用我现在的运营商吗？</span><span lang="pa">ਮੈਂ ਆਪਣੀ ਹੁਣ ਵਾਲੀ ਫ਼ੋਨ ਕੰਪਨੀ ਰੱਖ ਸਕਦਾ?</span><span lang="fr">Je peux garder mon fournisseur actuel ?</span></summary><p><span lang="en">Yes. We transfer the number to the carrier of your choice.</span><span lang="zh-CN">能。您用哪家，我们就转到哪家。</span><span lang="pa">ਹਾਂ ਜੀ। ਜਿਹੜੀ ਕੰਪਨੀ ਤੁਸੀਂ ਵਰਤਦੇ ਹੋ, ਨੰਬਰ ਉੱਥੇ ਹੀ ਟਰਾਂਸਫਰ ਕਰ ਦਿੰਦੇ ਹਾਂ।</span><span lang="fr">Oui. On transfère le numéro chez le fournisseur de votre choix.</span></p></details>
       <details><summary><span lang="en">How long does the transfer take?</span><span lang="zh-CN">过户要多长时间？</span><span lang="pa">ਟਰਾਂਸਫਰ ’ਚ ਕਿੰਨੇ ਦਿਨ ਲੱਗਦੇ?</span><span lang="fr">Combien de temps prend le transfert ?</span></summary><p><span lang="en">Same day. Your number works right away once the transfer is done.</span><span lang="zh-CN">当天就能办好，立即生效。</span><span lang="pa">ਉਸੇ ਦਿਨ। ਟਰਾਂਸਫਰ ਹੁੰਦੇ ਹੀ ਨੰਬਰ ਤੁਰੰਤ ਚੱਲਣ ਲੱਗ ਪੈਂਦਾ ਹੈ।</span><span lang="fr">Le jour même. Votre numéro fonctionne dès que le transfert est fait.</span></p></details>
       <details><summary><span lang="en">Do you offer payment plans?</span><span lang="zh-CN">能分期吗？</span><span lang="pa">ਕਿਸ਼ਤਾਂ ’ਚ ਲੈ ਸਕਦੇ ਹਾਂ?</span><span lang="fr">Offrez-vous des paiements échelonnés ?</span></summary><p><span lang="en">Yes. Contact us and we’ll work out a plan that suits your business.</span><span lang="zh-CN">能。联系我们，按您的情况商量个方案。</span><span lang="pa">ਹਾਂ ਜੀ। ਫ਼ੋਨ ਕਰੋ, ਤੁਹਾਡੇ ਹਿਸਾਬ ਨਾਲ ਗੱਲ ਬਣਾ ਲਵਾਂਗੇ।</span><span lang="fr">Oui. Contactez-nous et on trouvera une entente adaptée à votre entreprise.</span></p></details>
-      <details><summary><span lang="en">Can you find a number that isn’t listed?</span><span lang="zh-CN">列表里没有我想要的号怎么办？</span><span lang="pa">ਜਿਹੜਾ ਨੰਬਰ ਲਿਸਟ ’ਚ ਨਹੀਂ, ਉਹ ਮਿਲ ਸਕਦਾ?</span><span lang="fr">Pouvez-vous trouver un numéro qui n’est pas sur la liste ?</span></summary><p><span lang="en">Yes. Tell us the area code and pattern you want, and we’ll source it for you. Custom numbers start from $999.</span><span lang="zh-CN">可以定制。告诉我们区号和规律，我们帮您找，$999 起。</span><span lang="pa">ਹਾਂ ਜੀ। ਏਰੀਆ ਕੋਡ ਤੇ ਜਿਹੋ ਜਿਹਾ ਨੰਬਰ ਚਾਹੀਦਾ ਦੱਸੋ, ਅਸੀਂ ਲੱਭ ਦਿਆਂਗੇ। $999 ਤੋਂ ਸ਼ੁਰੂ।</span><span lang="fr">Oui. Dites-nous l’indicatif et la combinaison voulus, on va le trouver pour vous. Numéros sur mesure à partir de 999 $.</span></p></details>
+      <details><summary><span lang="en">Can you find a number that isn’t listed?</span><span lang="zh-CN">列表里没有我想要的号怎么办？</span><span lang="pa">ਜਿਹੜਾ ਨੰਬਰ ਲਿਸਟ ’ਚ ਨਹੀਂ, ਉਹ ਮਿਲ ਸਕਦਾ?</span><span lang="fr">Pouvez-vous trouver un numéro qui n’est pas sur la liste ?</span></summary><p><span lang="en">Yes. Tell us the area code and pattern you want, and we’ll source it for you. Simple patterns like birthdays, ABAB or AABB start from $999; four-of-a-kind numbers are priced on request.</span><span lang="zh-CN">可以定制。告诉我们区号和规律，我们帮您找。生日、纪念日、ABAB、AABB 这类 $999 起，四连号价格面议。</span><span lang="pa">ਹਾਂ ਜੀ। ਏਰੀਆ ਕੋਡ ਤੇ ਜਿਹੋ ਜਿਹਾ ਨੰਬਰ ਚਾਹੀਦਾ ਦੱਸੋ, ਅਸੀਂ ਲੱਭ ਦਿਆਂਗੇ। ਜਨਮ ਦਿਨ, ABAB ਜਾਂ AABB ਵਰਗੇ ਨੰਬਰ $999 ਤੋਂ ਸ਼ੁਰੂ; ਚਾਰ ਇੱਕੋ ਜਿਹੇ ਅੰਕਾਂ ਵਾਲੇ ਨੰਬਰਾਂ ਦਾ ਰੇਟ ਗੱਲਬਾਤ ਨਾਲ।</span><span lang="fr">Oui. Dites-nous l’indicatif et la combinaison voulus, on va le trouver pour vous. Combinaisons simples (date de naissance, ABAB, AABB) à partir de 999 $; quatre chiffres identiques : prix sur demande.</span></p></details>
       <details><summary><span lang="en">Why are some digits hidden?</span><span lang="zh-CN">为什么中间几位看不到？</span><span lang="pa">ਵਿਚਕਾਰਲੇ ਅੰਕ ਕਿਉਂ ਲੁਕੋਏ ਨੇ?</span><span lang="fr">Pourquoi certains chiffres sont-ils masqués ?</span></summary><p><span lang="en">Reserve a number or contact us to see the full number.</span><span lang="zh-CN">预订或者联系我们，就能看到完整号码。</span><span lang="pa">ਰਿਜ਼ਰਵ ਕਰੋ ਜਾਂ ਫ਼ੋਨ ਕਰੋ, ਪੂਰਾ ਨੰਬਰ ਦੱਸ ਦਿਆਂਗੇ।</span><span lang="fr">Réservez un numéro ou contactez-nous pour le voir au complet.</span></p></details>
     </div>
   </section>
@@ -408,7 +417,7 @@ form textarea { min-height: 100px; resize: vertical; }
           <a class="btn ghost" href="sms:+18259251111"><span lang="en">Text</span><span lang="zh-CN">发短信</span><span lang="pa">ਮੈਸੇਜ ਕਰੋ</span><span lang="fr">Texto</span></a>
           <a class="btn ghost mail-btn" href="mailto:info@numberpro.ca?subject=Number%20inquiry"><span lang="en">Email</span><span lang="zh-CN">发邮件</span><span lang="pa">ਈਮੇਲ ਕਰੋ</span><span lang="fr">Courriel</span></a>
         </div>
-        <address class="addr">Number Pro<br>6115 3 St SE, Building D<br>Calgary, AB<br><a href="https://www.google.com/maps/search/?api=1&query=6115+3+St+SE+Building+D+Calgary+AB" target="_blank" rel="noopener"><span lang="en">Open in Google Maps</span><span lang="zh-CN">在 Google 地图里打开</span><span lang="pa">Google Maps ’ਤੇ ਦੇਖੋ</span><span lang="fr">Ouvrir dans Google Maps</span></a></address>
+        <address class="addr">Number Pro<br>6115 3 St SE, Building D<br>Calgary, AB</address>
       </div>
       <form id="reserve" onsubmit="event.preventDefault(); sendReserve();">
         <label><span lang="en">Your name</span><span lang="zh-CN">怎么称呼您</span><span lang="pa">ਤੁਹਾਡਾ ਨਾਂ</span><span lang="fr">Votre nom</span><input name="name" required autocomplete="name"></label>
